@@ -28,7 +28,7 @@ export const ContactCard = () => {
                 {CardDetail.map((item, index) => (
                     <div key={index} className="flex flex-col gap-1 border-b-2 border-l-2 border-gray-300 w-2/3 p-3">
                         {item.icon}
-                        <p className="text-sm">{item.title}</p>
+                        <p className="text-sm text-black">{item.title}</p>
                         <Link to= {`mailto:${item.text}`} className="font-bold text-xs">{item.text}</Link>
                     </div>
                 ))}
