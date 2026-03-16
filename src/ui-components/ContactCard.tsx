@@ -26,7 +26,7 @@ export const ContactCard = () => {
             <p className="text-xl font-medium mb-5">Contact Us</p>
             <div className="grid grid-cols-3 justify-between w-full">
                 {CardDetail.map((item, index) => (
-                    <div key={index} className="flex flex-col gap-1 shadow-sm border-l-2 border-gray-300 w-2/3 p-3">
+                    <div key={index} className="flex flex-col gap-1 border-b-2 border-l-2 border-gray-300 w-2/3 p-3">
                         {item.icon}
                         <p className="text-sm">{item.title}</p>
                         <Link to= {`mailto:${item.text}`} className="font-bold text-xs">{item.text}</Link>
