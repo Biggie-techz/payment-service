@@ -46,13 +46,14 @@ export const Cards = () => {
     ]
     return (
         <div className="flex flex-col items-center">
+            <p className="font-bold text-2xl text-chart-5 block lg:hidden mt-10">Revenue Payments Made Easy</p>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto mt-10 w-full px-4 md:px-6">
                 {CardDetails.map((item, index) => (
-                    <div key={index} className="group relative bg-white/10 backdrop-blur-sm shadow-xl rounded-xl h-60 w-full border border-white/20 overflow-hidden transition-all duration-300 hover:scale-[102%]">
+                    <div key={index} className="group relative bg-white/10 backdrop-blur-sm shadow-xl rounded-xl h-52 w-full border border-white/20 overflow-hidden transition-all duration-300 hover:scale-[102%]">
                         <img src={item.icon} alt={`Illustration of ${item.title.toLowerCase()}`} className="h-full w-full object-cover rounded-xl scale-110 group-hover:scale-100 transition-transform duration-500" />
-                        <div className="absolute bottom-0 left-0 right-0 bg-linear-to-t from-black/90 via-black/70 to-transparent/0 backdrop-blur-sm h-3/5 xl:h-2/5 group-hover:h-4/5 transition-all duration-500 flex flex-col items-center justify-center gap-1 p-6 pt-12 rounded-b-xl">
-                            <p className="text-lg lg:text-base font-bold font-serif text-white drop-shadow-md text-center tracking-wide">{item.title}</p>
-                            <p className="text-sm lg:text-xs font-medium font-serif text-white/90 drop-shadow-sm text-center">{item.desc}</p>
+                        <div className="absolute bottom-0 left-0 right-0 bg-linear-to-t from-black/90 via-black/70 to-transparent/0 backdrop-blur-sm h-3/5 xl:h-1/2 group-hover:h-4/5 transition-all duration-500 flex flex-col items-center justify-center gap-1 p-6 pt-12 rounded-b-xl">
+                            <p className="text-lg lg:text-base font-bold font-sans text-white drop-shadow-md text-center tracking-wide">{item.title}</p>
+                            <p className="text-sm lg:text-xs font-medium font-sans text-white/90 drop-shadow-sm text-center">{item.desc}</p>
                             <Dialog>
                                 <DialogTrigger>
                                     <button className="cursor-pointer px-3 py-1 rounded-full text-xs font-semibold text-white flex items-center gap-2 transition-all duration-300 hover:text-[13px] shadow-lg group-hover:animate-pulse">
@@ -109,6 +110,7 @@ export const Cards = () => {
                                                     </DialogContent>
                                                 </Dialog>
                                             </p>
+                                            <Separator />
                                             <p className="flex flex-col text-nowrap items-center text-xs"><div>If you <span className="text-red-500 font-bold mx-1">DO NOT HAVE</span> S-TIN, kindly click on</div> <ChevronsDown size={18} /> <Button variant={"destructive"} className="cursor-pointer   ">Continue without S-TIN</Button> </p>
                                         </div>
                                     }
