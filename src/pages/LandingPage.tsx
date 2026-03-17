@@ -4,7 +4,7 @@ import { PageSeparator } from "../ui-components/PageSeparator"
 
 export const LandingPage = () => {
   return (
-    <div>
+    <div className="bg-background h-screen">
         <Cards />
         <PageSeparator />
         <ContactCard />
