@@ -13,7 +13,7 @@ export const Navbar = () => {
 
   return (
     <nav className="p-4 md:px-6 bg-background/90 sticky top-0 z-50 backdrop-blur-sm border-b border-border">
-      <div className="container mx-auto flex items-center justify-between max-w-6xl">
+      <div className="container mx-auto flex items-center justify-between max-w-7xl">
         <img src={logo} alt="" className="w-36" />
         <p className="font-bold text-sm lg:text-2xl text-chart-5 hidden lg:block">Revenue Payments Made Easy</p>
         <div className="flex items-center gap-2">

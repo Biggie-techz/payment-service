@@ -22,7 +22,7 @@ export const ContactCard = () => {
         }
     ]
     return (
-        <div className="max-w-6xl flex flex-col items-center mx-auto w-full px-4 md:px-6 py-5">
+        <div className="max-w-7xl bg-background flex flex-col items-center mx-auto w-full px-4 md:px-6 py-5">
             <p className="text-2xl text-chart-5 font-semibold mb-5">Contact Us</p>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-between gap-3 w-full">
                 {CardDetail.map((item, index) => (

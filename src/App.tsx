@@ -6,7 +6,7 @@ import { LandingPage } from './pages/LandingPage'
 
 const App = () => {
   return (
-    <div className="min-h-screen bg-gray-50">
+    <div className="bg-background">
       <Navbar />
       <Routes>
         <Route path="/" element={<LandingPage />} />

@@ -45,9 +45,9 @@ export const Cards = () => {
         },
     ]
     return (
-        <div className="flex flex-col items-center">
+        <div className="flex flex-col items-center bg-background">
             <p className="font-bold text-2xl text-chart-5 block lg:hidden mt-10">Revenue Payments Made Easy</p>
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto mt-10 w-full px-4 md:px-6">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-7xl mx-auto mt-10 w-full px-4 md:px-6">
                 {CardDetails.map((item, index) => (
                     <div key={index} className="group relative bg-white/10 backdrop-blur-sm shadow-xl rounded-xl h-52 w-full border border-white/20 overflow-hidden transition-all duration-300 hover:scale-[102%]">
                         <img src={item.icon} alt={`Illustration of ${item.title.toLowerCase()}`} className="h-full w-full object-cover rounded-xl scale-110 group-hover:scale-100 transition-transform duration-500" />
