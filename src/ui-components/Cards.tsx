@@ -98,6 +98,7 @@ export const Cards = () => {
       } catch (err) {
         setError('Failed to load data');
         console.error(err);
+        console.error(error)
       } finally {
         setLoading(false);
       }
