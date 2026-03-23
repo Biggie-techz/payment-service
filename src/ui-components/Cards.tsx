@@ -299,19 +299,19 @@ export const Cards = () => {
                                   <SelectContent>
                                     <SelectGroup>
                                       <SelectLabel>AGENCY</SelectLabel>
-                                      <SelectItem value="apple">
+                                      <SelectItem value="agency-1">
                                         Agency-1
                                       </SelectItem>
-                                      <SelectItem value="banana">
+                                      <SelectItem value="agency-2">
                                         Agency-2
                                       </SelectItem>
-                                      <SelectItem value="blueberry">
+                                      <SelectItem value="agency-3">
                                         Agency-3
                                       </SelectItem>
-                                      <SelectItem value="grapes">
+                                      <SelectItem value="agency-4">
                                         Agency-4
                                       </SelectItem>
-                                      <SelectItem value="pineapple">
+                                      <SelectItem value="agency-5">
                                         Agency-5
                                       </SelectItem>
                                     </SelectGroup>
