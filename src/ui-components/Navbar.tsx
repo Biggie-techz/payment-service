@@ -28,7 +28,7 @@ export const Navbar = () => {
               <Moon className="h-5 w-5" />
             )}
           </button> */}
-          <button className="bg-emerald-800 text-white p-2 rounded-md cursor-pointer">Self-Service</button>
+          <a href="https://selfservice.deltairs.com/" target="_blank" className="bg-emerald-800 text-white p-2 rounded-md cursor-pointer">Self-Service</a>
         </div>
       </div>
     </nav>

@@ -274,7 +274,7 @@ export const Cards = () => {
                               <h1 className="text-xl font-medium">
                                 Payment Information
                               </h1>
-                              <div className="w-full flex flex-col sm:flex-row items-start sm:items-center gap-2">
+                              <div className="w-full sm:flex sm:items-center gap-2">
                                 <label htmlFor="" className="text-nowrap w-2/5">
                                   Surname or Company name{' '}
                                   <span className="text-red-500">*</span> :
@@ -325,7 +325,7 @@ export const Cards = () => {
                                 </label>
                                 <Input type="text" className="rounded-sm" />
                               </div>
-                              <div className="w-full flex-col sm:flex-row items-start sm:items-center gap-2">
+                              <div className="w-full sm:flex sm:items-center gap-2">
                                 <label htmlFor="" className="text-nowrap w-2/5">
                                   Enter Amount to be paid (₦){' '}
                                   <span className="text-red-500">*</span> :
@@ -344,7 +344,7 @@ export const Cards = () => {
                               <h1 className="text-xl font-medium">
                                 Other Information
                               </h1>
-                              <div className="w-full flex-col sm:flex-row items-start sm:items-center gap-2">
+                              <div className="w-full sm:flex sm:items-center gap-2">
                                 <label htmlFor="" className="text-nowrap w-2/5">
                                   Street No and Name{' '}
                                   <span className="text-red-500">*</span> :
