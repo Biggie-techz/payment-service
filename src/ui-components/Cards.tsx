@@ -56,49 +56,49 @@ export const Cards = () => {
 
         // Fallback Nigeria states since API 404
         const fallbackStates = [
-          { name: "Abia", state_code: "AB" },
-          { name: "Adamawa", state_code: "AD" },
-          { name: "Akwa Ibom", state_code: "AK" },
-          { name: "Anambra", state_code: "AN" },
-          { name: "Bauchi", state_code: "BA" },
-          { name: "Bayelsa", state_code: "BY" },
-          { name: "Benue", state_code: "BE" },
-          { name: "Borno", state_code: "BO" },
-          { name: "Cross River", state_code: "CR" },
-          { name: "Delta", state_code: "DE" },
-          { name: "Ebonyi", state_code: "EB" },
-          { name: "Edo", state_code: "ED" },
-          { name: "Ekiti", state_code: "EK" },
-          { name: "Enugu", state_code: "EN" },
-          { name: "FCT - Abuja", state_code: "FC" },
-          { name: "Gombe", state_code: "GO" },
-          { name: "Imo", state_code: "IM" },
-          { name: "Jigawa", state_code: "JI" },
-          { name: "Kaduna", state_code: "KA" },
-          { name: "Kano", state_code: "KN" },
-          { name: "Katsina", state_code: "KT" },
-          { name: "Kebbi", state_code: "KE" },
-          { name: "Kogi", state_code: "KO" },
-          { name: "Kwara", state_code: "KW" },
-          { name: "Lagos", state_code: "LA" },
-          { name: "Nassarawa", state_code: "NA" },
-          { name: "Niger", state_code: "NI" },
-          { name: "Ogun", state_code: "OG" },
-          { name: "Ondo", state_code: "ON" },
-          { name: "Osun", state_code: "OS" },
-          { name: "Oyo", state_code: "OY" },
-          { name: "Plateau", state_code: "PL" },
-          { name: "Rivers", state_code: "RI" },
-          { name: "Sokoto", state_code: "SO" },
-          { name: "Taraba", state_code: "TA" },
-          { name: "Yobe", state_code: "YO" },
-          { name: "Zamfara", state_code: "ZA" },
+          { name: 'Abia', state_code: 'AB' },
+          { name: 'Adamawa', state_code: 'AD' },
+          { name: 'Akwa Ibom', state_code: 'AK' },
+          { name: 'Anambra', state_code: 'AN' },
+          { name: 'Bauchi', state_code: 'BA' },
+          { name: 'Bayelsa', state_code: 'BY' },
+          { name: 'Benue', state_code: 'BE' },
+          { name: 'Borno', state_code: 'BO' },
+          { name: 'Cross River', state_code: 'CR' },
+          { name: 'Delta', state_code: 'DE' },
+          { name: 'Ebonyi', state_code: 'EB' },
+          { name: 'Edo', state_code: 'ED' },
+          { name: 'Ekiti', state_code: 'EK' },
+          { name: 'Enugu', state_code: 'EN' },
+          { name: 'FCT - Abuja', state_code: 'FC' },
+          { name: 'Gombe', state_code: 'GO' },
+          { name: 'Imo', state_code: 'IM' },
+          { name: 'Jigawa', state_code: 'JI' },
+          { name: 'Kaduna', state_code: 'KA' },
+          { name: 'Kano', state_code: 'KN' },
+          { name: 'Katsina', state_code: 'KT' },
+          { name: 'Kebbi', state_code: 'KE' },
+          { name: 'Kogi', state_code: 'KO' },
+          { name: 'Kwara', state_code: 'KW' },
+          { name: 'Lagos', state_code: 'LA' },
+          { name: 'Nassarawa', state_code: 'NA' },
+          { name: 'Niger', state_code: 'NI' },
+          { name: 'Ogun', state_code: 'OG' },
+          { name: 'Ondo', state_code: 'ON' },
+          { name: 'Osun', state_code: 'OS' },
+          { name: 'Oyo', state_code: 'OY' },
+          { name: 'Plateau', state_code: 'PL' },
+          { name: 'Rivers', state_code: 'RI' },
+          { name: 'Sokoto', state_code: 'SO' },
+          { name: 'Taraba', state_code: 'TA' },
+          { name: 'Yobe', state_code: 'YO' },
+          { name: 'Zamfara', state_code: 'ZA' },
         ];
         setNigeriaStates(fallbackStates);
       } catch (err) {
         setError('Failed to load data');
         console.error(err);
-        console.error(error)
+        console.error(error);
       } finally {
         setLoading(false);
       }
@@ -175,7 +175,7 @@ export const Cards = () => {
                 </DialogTrigger>
                 <DialogContent>
                   <DialogHeader>
-                    <DialogTitle className="text-sm lg:text-base">
+                    <DialogTitle className="text-sm lg:text-base pr-5 sm:pr-0">
                       {item.dialogHeader}
                     </DialogTitle>
                   </DialogHeader>
@@ -259,9 +259,9 @@ export const Cards = () => {
                               Continue without S-TIN
                             </Button>{' '}
                           </DialogTrigger>
-                          <DialogContent className="min-w-3xl">
+                          <DialogContent className="md:min-w-3xl max-h-[90vh] overflow-y-scroll no-scrollbar">
                             <DialogHeader>
-                              <DialogTitle>
+                              <DialogTitle className='pr-5 sm:pr-0'>
                                 Please provide the details below for your
                                 Receipt
                               </DialogTitle>
@@ -269,12 +269,12 @@ export const Cards = () => {
                             <Separator />
                             <form
                               action=""
-                              className="flex flex-col items-start gap-3"
+                              className="flex flex-col items-start gap-3 -mx-4 px-4"
                             >
                               <h1 className="text-xl font-medium">
                                 Payment Information
                               </h1>
-                              <div className="w-full flex items-center gap-2">
+                              <div className="w-full flex flex-col sm:flex-row items-start sm:items-center gap-2">
                                 <label htmlFor="" className="text-nowrap w-2/5">
                                   Surname or Company name{' '}
                                   <span className="text-red-500">*</span> :
@@ -325,7 +325,7 @@ export const Cards = () => {
                                 </label>
                                 <Input type="text" className="rounded-sm" />
                               </div>
-                              <div className="w-full flex items-center gap-2">
+                              <div className="w-full flex-col sm:flex-row items-start sm:items-center gap-2">
                                 <label htmlFor="" className="text-nowrap w-2/5">
                                   Enter Amount to be paid (₦){' '}
                                   <span className="text-red-500">*</span> :
@@ -344,7 +344,7 @@ export const Cards = () => {
                               <h1 className="text-xl font-medium">
                                 Other Information
                               </h1>
-                              <div className="w-full flex items-center gap-2">
+                              <div className="w-full flex-col sm:flex-row items-start sm:items-center gap-2">
                                 <label htmlFor="" className="text-nowrap w-2/5">
                                   Street No and Name{' '}
                                   <span className="text-red-500">*</span> :
